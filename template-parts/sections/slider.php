@@ -17,42 +17,47 @@
 				$slider_image6 = get_field('slider_image6');
 				?>
 				<div class="swiper">
-					<div class="swiper-wrapper">
-						<a href="<?php echo $slider_image1 ? esc_url($slider_image1['url']) : get_template_directory_uri() . '/img/slider/s1.png'; ?>" class="swiper-slide" data-fancybox="gallery">
+				<div class="swiper-wrapper">
+					<a href="<?php echo $slider_image1 ? esc_url($slider_image1['url']) : get_template_directory_uri() . '/img/slider/s1.png'; ?>" class="swiper-slide" data-fancybox="gallery">
 						<img
-    						src="<?php echo $slider_image1 ? esc_url($slider_image1['url']) : get_template_directory_uri() . '/img/slider/s1.png'; ?>"
-   							 alt="<?php echo $slider_image1 ? esc_attr($slider_image1['alt']) : 'Подарочные наборы и аксессуары';
-						?>">
+						src="<?php echo $slider_image1 ? esc_url($slider_image1['url']) : get_template_directory_uri() . '/img/slider/s1.png'; ?>"
+						alt="<?php echo $slider_image1 ? esc_attr($slider_image1['alt']) : 'Подарочные наборы и аксессуары'; ?>">
+					</a>
 
-						<a href="<?php echo $slider_image2 ? esc_url($slider_image2['url']) : get_template_directory_uri() . '/img/slider/s2.png'; ?>" class="swiper-slide" data-fancybox="gallery">
-						<img
-    						src="<?php echo $slider_image2 ? esc_url($slider_image2['url']) : get_template_directory_uri() . '/img/slider/s2.png'; ?>"
-   							 alt="<?php echo $slider_image2 ? esc_attr($slider_image2['alt']) : 'Подарочные наборы и аксессуары';
-						?>">
 
-						<a href="<?php echo $slider_image3 ? esc_url($slider_image3['url']) : get_template_directory_uri() . '/img/slider/s3.png'; ?>" class="swiper-slide" data-fancybox="gallery">
+					<a href="<?php echo $slider_image2 ? esc_url($slider_image2['url']) : get_template_directory_uri() . '/img/slider/s2.png'; ?>" class="swiper-slide" data-fancybox="gallery">
 						<img
-    						src="<?php echo $slider_image3 ? esc_url($slider_image3['url']) : get_template_directory_uri() . '/img/slider/s3.png'; ?>"
-   							 alt="<?php echo $slider_image3 ? esc_attr($slider_image3['alt']) : 'Подарочные наборы и аксессуары';
-						?>">
+						src="<?php echo $slider_image2 ? esc_url($slider_image2['url']) : get_template_directory_uri() . '/img/slider/s2.png'; ?>"
+						alt="<?php echo $slider_image2 ? esc_attr($slider_image2['alt']) : 'Подарочные наборы и аксессуары'; ?>">
+					</a>
 
-						<a href="<?php echo $slider_image4 ? esc_url($slider_image4['url']) : get_template_directory_uri() . '/img/slider/s4.png'; ?>" class="swiper-slide" data-fancybox="gallery">
-						<img
-    						src="<?php echo $slider_image4 ? esc_url($slider_image4['url']) : get_template_directory_uri() . '/img/slider/s4.png'; ?>"
-   							 alt="<?php echo $slider_image4 ? esc_attr($slider_image4['alt']) : 'Подарочные наборы и аксессуары';
-						?>">
 
-						<a href="<?php echo $slider_image5 ? esc_url($slider_image5['url']) : get_template_directory_uri() . '/img/slider/s5.png'; ?>" class="swiper-slide" data-fancybox="gallery">
+					<a href="<?php echo $slider_image3 ? esc_url($slider_image3['url']) : get_template_directory_uri() . '/img/slider/s3.png'; ?>" class="swiper-slide" data-fancybox="gallery">
 						<img
-    						src="<?php echo $slider_image5 ? esc_url($slider_image5['url']) : get_template_directory_uri() . '/img/slider/s5.png'; ?>"
-   							 alt="<?php echo $slider_image5 ? esc_attr($slider_image5['alt']) : 'Подарочные наборы и аксессуары';
-						?>">
+						src="<?php echo $slider_image3 ? esc_url($slider_image3['url']) : get_template_directory_uri() . '/img/slider/s3.png'; ?>"
+						alt="<?php echo $slider_image3 ? esc_attr($slider_image3['alt']) : 'Подарочные наборы и аксессуары'; ?>">
+					</a>
 
-						<a href="<?php echo $slider_image6 ? esc_url($slider_image6['url']) : get_template_directory_uri() . '/img/slider/s6.png'; ?>" class="swiper-slide" data-fancybox="gallery">
+
+					<a href="<?php echo $slider_image4 ? esc_url($slider_image4['url']) : get_template_directory_uri() . '/img/slider/s4.png'; ?>" class="swiper-slide" data-fancybox="gallery">
 						<img
-    						src="<?php echo $slider_image6 ? esc_url($slider_image6['url']) : get_template_directory_uri() . '/img/slider/s6.png'; ?>"
-   							 alt="<?php echo $slider_image6 ? esc_attr($slider_image6['alt']) : 'Подарочные наборы и аксессуары';
-						?>">
+						src="<?php echo $slider_image4 ? esc_url($slider_image4['url']) : get_template_directory_uri() . '/img/slider/s4.png'; ?>"
+						alt="<?php echo $slider_image4 ? esc_attr($slider_image4['alt']) : 'Подарочные наборы и аксессуары'; ?>">
+					</a>
+
+
+					<a href="<?php echo $slider_image5 ? esc_url($slider_image5['url']) : get_template_directory_uri() . '/img/slider/s5.png'; ?>" class="swiper-slide" data-fancybox="gallery">
+						<img
+						src="<?php echo $slider_image5 ? esc_url($slider_image5['url']) : get_template_directory_uri() . '/img/slider/s5.png'; ?>"
+						alt="<?php echo $slider_image5 ? esc_attr($slider_image5['alt']) : 'Подарочные наборы и аксессуары'; ?>">
+					</a>
+
+
+					<a href="<?php echo $slider_image6 ? esc_url($slider_image6['url']) : get_template_directory_uri() . '/img/slider/s6.png'; ?>" class="swiper-slide" data-fancybox="gallery">
+						<img
+						src="<?php echo $slider_image6 ? esc_url($slider_image6['url']) : get_template_directory_uri() . '/img/slider/s6.png'; ?>"
+						alt="<?php echo $slider_image6 ? esc_attr($slider_image6['alt']) : 'Подарочные наборы и аксессуары'; ?>">
+					</a>
 					</div>
 				</div>
 				<div class="swiper-nav">

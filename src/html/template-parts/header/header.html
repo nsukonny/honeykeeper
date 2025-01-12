@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Basic head config -->
+	<!-- Meta -->
+	<title>@@title</title>
+	<meta name="description" content="Please write description content here">
+	<link rel="canonical" href="https://example.com">
+	<meta name="robots" content="noindex, nofollow">
+	<!--  Please don't forget turn on indexation. To turn it on - delete "no" in "noindex" -->
+	<!-- These meta tags ensure that the site is displayed correctly on social media (OG) -->
+	<meta property="og:title" content="HoneyKeeper"> <!--Title-->
+	<meta property="og:description" content="HoneyKeeper"> <!--Desctiption-->
+	<meta property="og:image" content="/img/og.png"> <!-- Cover image -->
+	<meta property="og:url" content="https://example.com"> <!-- Your future url  -->
+	<meta property="og:type" content="website">
+	<!-- End of meta -->
+	<link rel="stylesheet" href="css/main.min.css" />
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="HoneyKeeper" />
+	<link rel="manifest" href="/favicon/site.webmanifest" />
+	<!-- End of favicon -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" id="header">
+			<div class="burger-bg">
+				<img src="img/header/burger-bg.svg" width="2000" height="2000" alt="Векторные пятиугольные соты с оранжево-серым градиентом">
+			</div>
+			<div class="container">
+				<div class="header-wrapper">
+					<div class="header-logo-wrapper">
+						<div class="header-logo-img">
+							<img src="/img/header/logo.svg" width="122" height="72" alt="Логотип векторной пчелы в оранежвом пятиугольнике с текстом `Хранитель меда`">
+						</div>
+						<span class="header-logo-desc">
+							Оптовые поставки мёда от производителя во все города России и СНГ
+						</span>
+					</div>
+					<div class="header-inner" id="header-inner">
+						<nav class="nav">
+							<ul>
+								<li><a href="#goods">Наш ассортимент</a></li>
+								<li><a href="#info">Почему наш мёд лучший</a></li>
+								<li><a href="#control">Помощь и консультация</a></li>
+								<li><a href="#delivery">Доставка и оплата</a></li>
+							</ul>
+						</nav>
+						<div class="header-buttons">
+							@@include('../../components/buttons/button-grey/button-grey.html', {'class': 'download', 'svg': '../../../svg/download.html', 'text': 'Скачать прайс'})
+							@@include('../../components/buttons/button-grey/button-grey.html', {'class': 'contact open-modal', 'svg': '../../../svg/contact.html', 'text': 'Связаться с нами'})
+						</div>
+						<div class="header-info">
+							<p>
+								<strong>
+									По всем вопросам
+								</strong>
+							</p>
+							<a href="tel:+79493585800">+7 (949) 358–58–00</a>
+						</div>
+					</div>
+					@@include('../../components/buttons/burger-button/burger-button.html')
+				</div>
+			</div>
+		</header>

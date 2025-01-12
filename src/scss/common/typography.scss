@@ -1,0 +1,114 @@
+@use './vars.scss' as *;
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+	font-family: $ff;
+	font-weight: $fw-medium;
+	margin: 0;
+}
+
+h1,
+.h1 {
+	font-size: 30px;
+	font-style: normal;
+	font-weight: $fw-medium;
+	line-height: 42px;
+	color: $light;
+	text-align: center;
+
+	@media (min-width: $lg) {
+		font-size: 52px;
+		line-height: 62px;
+		text-align: left;
+	}
+
+	span {
+		color: $accent;
+		white-space: nowrap;
+	}
+}
+
+h2,
+.h2 {
+	text-align: center;
+	font-family: $ff;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: $fw-medium;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: $light;
+	padding-bottom: 8px;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: 100%;
+		transform: translateX(-50%);
+		display: block;
+		width: 105%;
+		height: 2px;
+		background-color: $accent;
+	}
+
+	@media (min-width: $lg) {
+		font-size: 28px;
+		line-height: 38px;
+	}
+}
+
+h3,
+.h3 {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: $fw-semibold;
+	line-height: 32px;
+	color: $white;
+
+	@media (min-width: $xs) {
+		font-size: 20px;
+	}
+
+	span {
+		color: $accent;
+	}
+
+	@media (min-width: $lg) {
+		font-size: 24px;
+	}
+}
+
+h4,
+.h4 {
+	font-size: $fs-xl;
+
+	@media (min-width: $lg) {
+		font-size: 24px
+	}
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	transition: color ease-out $tr;
+}
+
+p {
+	margin: 0;
+}
+
+b,
+strong {
+	font-weight: $fw-semibold
+}

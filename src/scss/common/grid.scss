@@ -1,0 +1,31 @@
+@use './vars.scss' as *;
+
+.container {
+	width: 100%;
+	max-width: 100%;
+	padding: 0 $container-padding-sm;
+	margin: 0 auto;
+
+	@media (min-width: $md) {
+		max-width: $container-md;
+		padding: 0 $container-padding-lg;
+	}
+
+	@media (min-width: $lg) {
+		max-width: $container-lg
+	}
+
+	@media (min-width: $xl) {
+		max-width: $container-xl
+	}
+
+	&-fluid {
+		width: 100%;
+		max-width: 100%;
+		padding: 0 $container-padding-lg
+	}
+
+	&.big {
+		max-width: 1430px;
+	}
+}

@@ -51,7 +51,11 @@
     </div>
 </footer>
 </div>
-<!-- .wrapper -->
+<?php
+get_template_part('modal');
+get_template_part('loader');
+?>
+</div><!-- .wrapper -->
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.min.js"></script>
 <?php wp_footer(); ?>
